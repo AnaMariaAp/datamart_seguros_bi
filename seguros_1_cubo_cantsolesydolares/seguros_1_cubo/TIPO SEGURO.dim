@@ -1,0 +1,163 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d26c21ab-4454-46ec-8e46-ecf139f360ab" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TIPO SEGURO</ID>
+  <Name>TIPO SEGURO</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="44edcf5e-acfc-4963-9432-e2cbce9b711f">
+    <DataSourceViewID>Seguros Datamart</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="2a85fdfd-8807-4585-9707-319b26d64931">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="438d2023-5071-44a6-821a-74b232b08028">
+      <ID>COD TIPO SEGURO</ID>
+      <Name>COD TIPO SEGURO</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b785bf0-88ac-4b10-be55-7ba3153809a4">
+          <DataType>WChar</DataType>
+          <DataSize>257</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f407c70-6c4b-4a39-8651-3fc0b33bc7fc">
+            <TableID>dbo_TIPO_SEGURO</TableID>
+            <ColumnID>COD_TIPO_SEGURO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5e7f817c-ef7b-4e83-99f6-296d763b765e">
+          <AttributeID>GRUPO</AttributeID>
+          <Name>GRUPO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0132c64b-e05c-4786-8584-2177fbe84350">
+          <AttributeID>TIPO</AttributeID>
+          <Name>TIPO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="76dd7174-e2c8-4f4c-931c-67317dc9e60a">
+          <AttributeID>SUBTIPO</AttributeID>
+          <Name>SUBTIPO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7450d9c0-f3b3-4d94-97d9-0fdfc20ea0bc">
+          <AttributeID>DESCRIPCION</AttributeID>
+          <Name>DESCRIPCION</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a0bf600-36ad-42fc-9116-a161e634628d">
+      <ID>GRUPO</ID>
+      <Name>GRUPO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6f765c42-a2be-4aa9-9a0b-5fb0ec9175cd">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a233eef9-79fe-48d4-9b10-c2999c26a505">
+            <TableID>dbo_TIPO_SEGURO</TableID>
+            <ColumnID>GRUPO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bcd7e774-3434-4b32-b582-dc87a0bea9fe">
+      <ID>TIPO</ID>
+      <Name>TIPO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2364420b-9819-48a1-b2b3-8382aab5a439">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ba6b52f-2af9-44c0-8261-8ecdb09af278">
+            <TableID>dbo_TIPO_SEGURO</TableID>
+            <ColumnID>TIPO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b6388f0f-c795-45e1-8725-443fe6784a78">
+      <ID>SUBTIPO</ID>
+      <Name>SUBTIPO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aecaadb2-46aa-4edc-8edc-2cc2c357a245">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b11da221-fac7-4d46-9efa-556465ba1777">
+            <TableID>dbo_TIPO_SEGURO</TableID>
+            <ColumnID>SUBTIPO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f542c12a-4158-4afa-8ce7-17d8369f7e21">
+      <ID>DESCRIPCION</ID>
+      <Name>DESCRIPCION</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="78cb1cbb-fe4f-450d-b230-795896e5a05c">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aaec48d9-014b-4a37-a255-0d18c2aaf3db">
+            <TableID>dbo_TIPO_SEGURO</TableID>
+            <ColumnID>DESCRIPCION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

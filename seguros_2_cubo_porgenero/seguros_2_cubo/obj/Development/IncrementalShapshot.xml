@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>seguros_2_cubo</Database>
+    <Server>KAREN_PC\KAREN</Server>
+    <ConnectionString>DataSource=KAREN_PC\KAREN;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>5MG5NMMhO9FYbrylN4jYjrWrxN0=20/06/2018 1:42:1020/06/2018 1:42:10</TimeStamp>
+        <ID>
+          <String>Seguros Datamart 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>CcwhTdMAVSvSDCsX95+Y4ZCvZAs=20/06/2018 1:42:4020/06/2018 1:42:39</TimeStamp>
+        <ID>
+          <String>Seguros Datamart 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Q6O2iYby8JB/VKi+9pyfxxKirIY=20/06/2018 1:42:5920/06/2018 1:42:59</TimeStamp>
+        <ID>
+          <String>AGENCIAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WRnV2acJ/N+UYpXsl4R3u4JFQCg=20/06/2018 1:43:1620/06/2018 1:43:16</TimeStamp>
+        <ID>
+          <String>SEXO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FieEVIUeSh/LtbS+FyTHASYsdKQ=20/06/2018 1:43:3120/06/2018 1:43:31</TimeStamp>
+        <ID>
+          <String>TIEMPO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3VI/NL4jBhZWdrAdkfHqy4nZX98=20/06/2018 1:43:5120/06/2018 1:43:50</TimeStamp>
+        <ID>
+          <String>TIPO SEGURO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>c0ppSRiLDxm5WJ6aA8q6HLV4r8Q=20/06/2018 1:44:0620/06/2018 1:44:06</TimeStamp>
+        <ID>
+          <String>UBIGEO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Y1u/MPjhmEyyqkZ/EX1OQyslfDE=20/06/2018 2:11:5020/06/2018 1:44:37Rr0UrbwDfxRSG2FvPojxWFVXtME=20/06/2018 1:44:3820/06/2018 1:44:37</TimeStamp>
+        <ID>
+          <String>Seguros Datamart 2</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>y+GLj0Tv1TOnMYsgOdRzZvCNifU=20/06/2018 1:41:2020/06/2018 1:41:19</TimeStamp>
+      <ID>
+        <String>seguros_2_cubo</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-06-26T00:46:00.243333Z</LastDeployed>
+</DeploymentSnapshot>

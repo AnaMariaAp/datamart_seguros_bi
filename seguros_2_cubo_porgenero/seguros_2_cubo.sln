@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "seguros_2_cubo", "seguros_2_cubo\seguros_2_cubo.dwproj", "{1A37690E-D03B-4770-B9FF-F7920767281A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A37690E-D03B-4770-B9FF-F7920767281A}.Development|Default.ActiveCfg = Development
+		{1A37690E-D03B-4770-B9FF-F7920767281A}.Development|Default.Build.0 = Development
+		{1A37690E-D03B-4770-B9FF-F7920767281A}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
